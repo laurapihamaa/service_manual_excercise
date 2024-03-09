@@ -1,18 +1,28 @@
 package com.etteplan.servicemanual.factorydevice;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
 
 @Entity
 public class FactoryDevice {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
+    @Column(name = "FACTORY_DEVICE_ID")
     private Long id;
+    
+    @Column(name = "FACTORY_DEVICE_NAME")
     private String name;
+    
+    @Column(name = "FACTORY_DEVICE_YEAR")
     private int year;
+    
+    @Column(name = "FACTORY_DEVICE_TYPE")
     private String type;
 
     protected FactoryDevice() {}
