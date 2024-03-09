@@ -7,7 +7,7 @@ The application consists of a Java-backend and a h2-database.
 Instruction on running the application:
 
 1. Start application by running ServiceManualApplication as a Java Application. The Application will start running on port 8084 (change possible from the application.properties file)
-2. The database is created based on the application.properties -file and the database can be viewed in the url: http://localhost:8084/
+2. The database is created based on the application.properties -file and the database can be viewed in the url: http://localhost:8084/console. The needed password etc also in application properties file.
 3. The application consists of the following API's:
    1. localhost:8084/tasks
       This retrieves all of the stored tasks in the maintenance task -database. The query can be executed using PostMan as following:
